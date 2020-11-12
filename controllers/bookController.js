@@ -47,7 +47,7 @@ const addBook = async (request, response) => {
       title: request.body.title,
       author: request.body.author,
       genre: request.body.genre,
-      yearPublished: request.body.date,
+      yearPublished: request.body.yearPublished,
       price: request.body.price,
     };
 
