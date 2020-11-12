@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 
 const database = require("./services/database");
-const MovieRouter = require("./routes/movies");
+const BookRouter = require("./routes/books");
 
 app.use(express.json());
-app.use("/dashboard", MovieRouter);
+app.use("/api/bookstore", BookRouter);
 database.connect();
 
 app.listen(8000, console.log("Server running on port 8000"));
